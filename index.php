@@ -1,7 +1,7 @@
 <?php 
     include("header.php");
-    include("return top.php");
 ?>
+<body>
      <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-lg-8 col-12">
@@ -18,27 +18,49 @@
         
                <section class="latest section">
                     <div class="section-inner">
-                        <h2 class="heading">Latest PHP Projects</h2>
-                        <div class="content">    
-                                               
-                            <div class="item featured text-center">
-                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/" target="_blank">Furniture Website</a></h3>
-                                <br><!-- <p class="summary">A popular Bootstrap 4 theme for promoting startup products</p> -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <h2 class="heading">Latest PHP Projects</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 text-center">
+                            <div class="content">
+                            <div class="item featured">
+                                <h3 class="title">
+                                    <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/" target="_blank">Furniture Website</a>
+                                </h3>
+                                <!-- <p class="summary">A popular Bootstrap 4 theme for promoting startup products</p> -->
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 text-center">
+                            <a href="https://devangfurniture.000webhostapp.com/" target="_blank">
                                 <div class="featured-image has-ribbon">
-                                    <a href="https://devangfurniture.000webhostapp.com/" target="_blank">
-                                    <img class="img-fluid project-image" src="assets/images/p1.jpg" alt="project name" />
-                                    </a>
+                                    <img src="assets/images/p1.jpg" class="img-fluid" alt="Responsive image" />
                                     <div class="ribbon">
                                         <div class="text">New</div>
                                     </div>
                                 </div>
-                                    
+                            </a>
+                        </div>
+                    </div>       
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
                                 <div class="desc text-left">                                    
-                                       <!--  <p>You can promote your main project here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p> -->
-                                </div><!--//desc-->         
-                                <a class="btn btn-cta-secondary" href="https://devangfurniture.000webhostapp.com/" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>                 
-                            </div><!--//item-->
-                            <hr class="divider" />
+                                  <!-- <p>You can promote your main project here. Suspendisse in tellus dolor.</p> -->
+                                </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 text-center">
+                                <a class="btn btn-cta-secondary" href="https://devangfurniture.000webhostapp.com/" target="_blank">
+                                <i class="fas fa-thumbs-up"></i> Back my project</a>                 
+                        </div>
+                    </div>
+
                             <!-- <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">
                                 <img class="img-fluid project-image" src="assets/images/projects/project-1.png" alt="project name" />
@@ -420,18 +442,10 @@
         </div><!--//container-->
     </footer><!--//footer-->
  
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/popper/popper.min.js"></script>
 </body>
 </html> 
 
