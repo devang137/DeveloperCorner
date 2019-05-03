@@ -1,30 +1,4 @@
-<?php
-//Contact form
-  include('connection.php');
-  if(isset($_POST['contact-submit']))
-  {
-    $name=$_POST['name'];
-    $email=$_POST['email'];
-    $phn=$_POST['no'];
-    // $mas=$POST['comments'];
-
-    $sql="INSERT INTO `contact`(`username`,`email`,`phn`) VALUES ('$name','$email','$phn')";
-
-    if (mysqli_query($connection, $sql)) { 
-        echo '<div class="alert alert-success">';
-        echo "New record created successfully";
-        echo '</div>';
-    } else {
-        echo '<div class="alert alert-success">';
-        echo "Error: " . $sql . "<br>" . mysqli_error($connection);
-        echo '</div>';
-    }
-  }
-  
-?>
 <link id="theme-style" rel="stylesheet" href="assets/css/contactt.css">  
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <div class="contact1">  
   <form id="contact" name="contact" method="post">
@@ -56,18 +30,66 @@
 	    var z = document.forms["contact"]["no"].value;
 	    if (x == "") 
 	    {
-	        alert("Pls Enter Name");
+          Swal.fire({
+          type: 'warning',
+          title: 'Oops...',
+          text: 'Pls Enter Name!',
+          });
 	        return false;
     	}
     	if (y == "") 
 	    {
-	        alert("Pls Enter Email");
+          Swal.fire({
+          type: 'warning',
+          title: 'Oops...',
+          text: 'Pls Enter Email!',
+          });
 	        return false;
     	}
     	if (z == "") 
 	    {
-	        alert("Pls Enter Phone Number");
+          Swal.fire({
+          type: 'warning',
+          title: 'Oops...',
+          text: 'Pls Enter Phone Number!',
+          });
 	        return false;
     	}
 	}	
 </script>
+
+<?php
+//Contact form
+  include('connection.php');
+  if(isset($_POST['contact-submit']))
+  {
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $phn=$_POST['no'];
+    // $mas=$POST['comments'];
+
+    $sql="INSERT INTO `contact`(`username`,`email`,`phn`) VALUES ('$name','$email','$phn')";
+
+    if (mysqli_query($connection, $sql)) { 
+        echo "<script>";
+        echo "Swal.fire('Good job!','i will contact you in 1 day!','success')";
+        echo "</script>";
+        echo '<div class="alert alert-success">';
+        echo "New record created successfully";
+        echo '</div>';
+    } else {
+        echo '<div class="alert alert-success">';
+        echo "<script>";
+        echo "Swal.fire({
+              type: 'error',
+              title: 'Oops...',
+              text: 'Something went wrong!',
+              footer: '<a href>Why do I have this issue?</a>'
+            })";
+        echo "</script>";
+        echo "Error: " . $sql . "<br>" . mysqli_error($connection);
+        echo '</div>';
+    }
+  }
+  
+?>
