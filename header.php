@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Developerscorner</title>
@@ -24,7 +24,7 @@
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="assets/plugins/jquery/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 </head> 
@@ -44,12 +44,11 @@
                         <h1 class="name"> Devang B Vachheta </h1>
                     <h2 class="desc">Web App Developer</h2>   
                         <ul class="social list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/devangvachheta"><i class="fab fa-facebook-f"></i></a></li>
                         <li class="list-inline-item"><a href="https://twitter.com/devangvachheta2"><i class="fab fa-twitter"></i></a></li>
-                        <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></li> -->
+                        <li class="list-inline-item"><a href="https://codepen.io/devang137/"><i class="fab fa-codepen"></i></a></li>
                         <li class="list-inline-item"><a href="https://www.linkedin.com/in/devangvachheeta/"><i class="fab fa-linkedin-in"></i></a></li>
                         <li class="list-inline-item"><a href="https://github.com/devang137"><i class="fab fa-github-alt"></i></a></li>
-                        <!--  <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>   
-                        <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>-->
                         </ul> 
                 </div><!--//profile-->
             </div>

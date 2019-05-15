@@ -9,5 +9,5 @@ jQuery(document).ready(function(){
 // });
 
  function index_redirect(){
-    window.location.href = "index.php";
+	window.location.href = "index.php";
  }
